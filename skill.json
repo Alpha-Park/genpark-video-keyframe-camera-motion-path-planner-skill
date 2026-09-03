@@ -1,0 +1,42 @@
+{
+  "name": "genpark-video-keyframe-camera-motion-path-planner-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Generative video keyframe 3D camera trajectory spline planner and dolly/pan/orbit motion interpolator.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "design-ai",
+  "tags": [
+    "runway-gen3",
+    "luma-dream-machine",
+    "camera-motion",
+    "video-keyframes",
+    "generative-video"
+  ],
+  "inputs": {
+    "scene_description": {
+      "type": "string"
+    },
+    "camera_movement": {
+      "type": "string"
+    },
+    "duration_seconds": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "motion_plan_id": {
+      "type": "string"
+    },
+    "camera_trajectory": {
+      "type": "string"
+    },
+    "total_keyframes": {
+      "type": "integer"
+    },
+    "trajectory_visualization_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
